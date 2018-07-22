@@ -1,0 +1,48 @@
+.Post {
+    border-style: solid;
+    border-color: deeppink;
+
+    width: 700px;
+    text-align: left;
+
+    padding: 30px;
+    vertical-align: top;
+    position: relative;
+}
+
+.Post .post-titleBar {
+
+}
+
+.Post p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.Post .post-userImage {
+    float: left;
+    display: inline-block;
+}
+
+.Post .post-username {
+    padding-top: 5px;
+    padding-left: 80px;
+    display: block;
+    width: 220px;
+    box-sizing: content-box;
+}
+
+.Post .post-timePassed {
+    padding-left: 80px;
+}
+
+.Post .post-title {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    float: right;
+}
+
+.Post .post-body {
+    margin-top: 30px;
+}

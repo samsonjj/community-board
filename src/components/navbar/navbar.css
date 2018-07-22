@@ -1,0 +1,45 @@
+.Navbar {
+    border-style: solid;
+    border-color: black;
+    border-radius: 15px;
+
+    width: 300px;
+    height: 700px;
+
+    background: #0f006f;
+    color: ghostwhite;
+
+    font-size: 20px;
+    float: left;
+}
+
+.Navbar ul {
+    padding: 0px;
+}
+
+.Navbar ul li {
+    height: 35px;
+    list-style-type: none;
+    text-align: center;
+    line-height: 35px;
+    padding: 5px;
+}
+
+.clickable {
+    cursor: pointer;
+}
+.clickable:hover {
+    background: #2f008f;
+}
+
+input {
+    width: 90%;
+    height: 35px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+
+    font-size: 16px;
+    font-family: 'Nunito';
+    text-align: center;
+}
