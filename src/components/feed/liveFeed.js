@@ -16,8 +16,6 @@ class LiveFeed extends Component {
 
     componentDidMount() {
         let postsArray = Posts.getPosts();
-        console.log(typeof(posts));
-        console.log(postsArray);
 
         this.setState((prevState) => (
             {

@@ -1,0 +1,60 @@
+.PostDetail {
+    border-style: solid;
+    border-color: deeppink;
+    border-radius: 30px;
+
+    width: 700px;
+    text-align: left;
+
+    padding: 30px;
+    margin-bottom: 50px;
+    vertical-align: top;
+    position: relative;
+    background: whitesmoke;
+}
+
+.PostDetail .post-titleBar {
+    height: 65px;
+}
+
+.PostDetail p {
+    padding: 0px;
+    margin: 0px;
+}
+
+.PostDetail .post-userImage {
+    float: left;
+    display: inline-block;
+}
+
+.PostDetail .post-username {
+    padding-top: 5px;
+    padding-left: 80px;
+    display: block;
+    box-sizing: content-box;
+    font-size: 13px;
+}
+
+.PostDetail .post-timePassed {
+    padding-left: 80px;
+}
+
+.PostDetail .post-title {
+    padding-top: 5px;
+    padding-left: 80px;
+    display: block;
+    box-sizing: content-box;
+    font-size: 25px;
+}
+
+.PostDetail .post-body {
+    margin-top: 30px;
+}
+
+.post-actions {
+    margin-top: 20px;
+}
+.post-actions span {
+    margin-right: 40px;
+    margin-top: 20px;
+}
