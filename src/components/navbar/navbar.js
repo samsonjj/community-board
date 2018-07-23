@@ -5,12 +5,13 @@ class Navbar extends Component {
     render() {
         return(
             <div className="Navbar">
-                <p>Navbar</p>
                 <ul>
                     <li>Search for a post</li>
                     <input type="text"></input>
-                    <li className="clickable">Something</li>
-                    <li className="clickable">Something else</li>
+                    <li className="clickable">Location reviews</li>
+                    <li className="clickable">Best lunches</li>
+                    <li className="clickable">Snagger stories</li>
+                    <li className="clickable">Message a snagger</li>
                 </ul>
             </div>
         )

@@ -32,7 +32,6 @@ class LiveFeed extends Component {
     render() {
         return (
             <div className="LiveFeed">
-                POSTS
                 {this.state.posts}
             </div>
         )

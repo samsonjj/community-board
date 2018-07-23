@@ -1,22 +1,25 @@
 .Post {
     border-style: solid;
     border-color: deeppink;
+    border-radius: 30px;
 
     width: 700px;
     text-align: left;
 
     padding: 30px;
+    margin-bottom: 50px;
     vertical-align: top;
     position: relative;
+    background: whitesmoke;
 }
 
 .Post .post-titleBar {
-
+    height: 65px;
 }
 
 .Post p {
-    margin: 0px;
     padding: 0px;
+    margin: 0px;
 }
 
 .Post .post-userImage {
@@ -28,8 +31,8 @@
     padding-top: 5px;
     padding-left: 80px;
     display: block;
-    width: 220px;
     box-sizing: content-box;
+    font-size: 13px;
 }
 
 .Post .post-timePassed {
@@ -37,12 +40,21 @@
 }
 
 .Post .post-title {
-    position: absolute;
-    top: 20px;
-    right: 25px;
-    float: right;
+    padding-top: 5px;
+    padding-left: 80px;
+    display: block;
+    box-sizing: content-box;
+    font-size: 25px;
 }
 
 .Post .post-body {
     margin-top: 30px;
+}
+
+.post-actions {
+    margin-top: 20px;
+}
+.post-actions span {
+    margin-right: 40px;
+    margin-top: 20px;
 }

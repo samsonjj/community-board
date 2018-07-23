@@ -14,12 +14,15 @@ class Post extends Component {
         <div>
             <div className="post-titleBar">
             <img className="post-userImage" src={post.userImage}></img>
-            <p className="post-username">{post.username + " posted"}</p>
-            <p className="post-timePassed">{post.timePassed + " ago"}</p>
+            <p className="post-username">{post.username + " posted " + post.timePassed + " ago"}</p>
 
             <p className="post-title">{post.title}</p>
             </div>
             <p className="post-body">{post.body}</p>
+            <div className="post-actions">
+                <span>Read More</span>
+                <span>Like</span>
+            </div>
         </div>
         )
     }

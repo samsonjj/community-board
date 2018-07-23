@@ -1,0 +1,17 @@
+.HomePage {
+    padding: 30px;
+    background: lightgray;
+    overflow-y: hidden;
+}
+
+.Navbar {
+    position: fixed;
+    top: 170px;
+    left: 40px;
+}
+
+.LiveFeed {
+    margin-left: 360px;
+    margin-top: 140px;
+}
+

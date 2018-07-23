@@ -1,3 +1,7 @@
 .LiveFeed {
-    padding-left: 350px;
+    padding-left: 30px;
+    height: 670px;
+    overflow-y: scroll;
+    background: lightgray;
+    padding: 20px;
 }
