@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import HomePage from './pages/home/homePage';
+import CreatePostPage from './pages/createPost/createPostPage';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 class App extends Component {
   render() {
@@ -10,7 +12,12 @@ class App extends Component {
         <div className="home-header">
             <img width="100%" src="/images/snagwork.PNG" position="fixed"/>
         </div>
-        <HomePage/>
+          <Router>
+            <div>
+                <Route path="/home" component={HomePage}/>
+                <Route path="/create" component={CreatePostPage}/>
+            </div>
+          </Router>
       </div>
     );
   }

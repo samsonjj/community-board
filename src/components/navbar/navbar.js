@@ -12,6 +12,8 @@ class Navbar extends Component {
                     <li className="clickable">Best lunches</li>
                     <li className="clickable">Snagger stories</li>
                     <li className="clickable">Message a snagger</li>
+                    <br/>
+                    <li className="clickable">Create a post</li>
                 </ul>
             </div>
         )
