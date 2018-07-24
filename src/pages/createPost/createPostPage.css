@@ -1,0 +1,17 @@
+.CreatePostPage {
+    padding-top: 200px;
+    margin-left: 350px;
+}
+
+.create-post-container {
+    border-style: solid;
+    border-color: black;
+    padding: 40px;
+}
+
+.input-title {
+}
+
+.input-body {
+    height: 200px
+}

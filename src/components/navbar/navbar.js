@@ -13,7 +13,7 @@ class Navbar extends Component {
                     <li className="clickable">Snagger stories</li>
                     <li className="clickable">Message a snagger</li>
                     <br/>
-                    <li className="clickable">Create a post</li>
+                    <a href="create"><li className="clickable">Create a post</li></a>
                 </ul>
             </div>
         )

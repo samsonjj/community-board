@@ -27,6 +27,7 @@
 
 .clickable {
     cursor: pointer;
+    color: white;
 }
 .clickable:hover {
     background: #2f008f;
