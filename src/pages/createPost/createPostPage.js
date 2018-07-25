@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Navbar from '../../components/navbar/navbar';
 import LiveFeed from '../../components/feed/liveFeed';
 import createPostPageCss from './createPostPage.css';
-import Posts from '../../providers/postsProvider';
+import PostsProvider from '../../providers/postsProvider';
 
 class createPostPage extends Component {
 
@@ -25,9 +25,8 @@ class createPostPage extends Component {
     }
 
     createPost(event) {
-        console.log('hello!');
         alert('it works!');
-        Posts.addPost({
+        PostsProvider.addPost({
             id: this.uniqueId++,
             title: this.state.title,
             body: this.state.body,
@@ -35,13 +34,10 @@ class createPostPage extends Component {
             comments: [],
             tags: this.state.tags
         });
-        console.log(Posts.getPosts());
-        console.log(this.state);
         event.preventDefault();
     }
 
     handleInputChange(event) {
-        console.log(event);
         const target = event.target;
         const value = target.value;
         const name = target.name;
@@ -59,6 +55,7 @@ class createPostPage extends Component {
 
     renderReviewPost() {
         let review;
+
         if(this.state.postType === 'review') {
             review =
                 <div>
@@ -85,9 +82,9 @@ class createPostPage extends Component {
     }
 
     render() {
+
         return (
             <div className="CreatePostPage">
-
 
                 <Navbar></Navbar>
                 <div className="create-post-container">

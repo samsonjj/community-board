@@ -7,6 +7,7 @@ class PostDetailPage extends Component {
     render() {
         return (
             <div className="PostDetailPage">
+                {console.log(this.props.match.params.postId)}
                 <PostDetail postId={this.props.match.params.postId}></PostDetail>
             </div>
         )

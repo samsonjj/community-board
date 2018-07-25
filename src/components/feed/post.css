@@ -1,12 +1,9 @@
 .Post {
-    border-style: solid;
-    border-color: deeppink;
-    border-radius: 30px;
-
     width: 700px;
     text-align: left;
 
-    padding: 30px;
+    padding-bottom: 30px;
+    padding-top: 0px;
     margin-bottom: 50px;
     vertical-align: top;
     position: relative;
@@ -14,7 +11,13 @@
 }
 
 .Post .post-titleBar {
-    height: 65px;
+    min-height: 65px;
+    background: #3c2b68;
+    color: white;
+}
+
+.Post .post-body-container {
+    padding: 25px;
 }
 
 .Post p {
@@ -23,6 +26,7 @@
 }
 
 .Post .post-userImage {
+    margin: 10px;
     float: left;
     display: inline-block;
 }
@@ -47,14 +51,45 @@
     font-size: 25px;
 }
 
+.Post .post-likes {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    font-size: 18px;
+}
+
+.Post .post-likes img {
+    width: 20px;
+    margin-left: 10px;
+}
+
 .Post .post-body {
-    margin-top: 30px;
+    margin-top: 0px;
+    max-height: 20px;
+    text-overflow: ellipsis;
 }
 
 .post-actions {
     margin-top: 20px;
+    margin-left: 20px;
 }
 .post-actions span {
-    margin-right: 40px;
-    margin-top: 20px;
+    padding: 6px;
+    margin-right: 20px;
+    background: lightgray;
 }
+
+.Post .tags {
+    padding: 10px;
+}
+
+.Post .tag {
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 7px;
+    background: gray;
+    margin-right: 20px;
+    font-size: 13px;
+}
+
+.Post {}

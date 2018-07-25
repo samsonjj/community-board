@@ -1,15 +1,31 @@
-import posts from '../stubs/posts';
+class postsProvider {
 
-var Posts = new Object();
+    constructor() {
+    }
 
-Posts.posts = posts;
+    getPosts() {
+        var posts = JSON.parse(localStorage.getItem('posts'));
+        return posts;
+    }
 
-Posts.getPosts = function() {
-    return this.posts;
+    addPost(post) {
+        var posts = JSON.parse(localStorage.getItem('posts'));
+        posts.push(post);
+        localStorage.setItem('posts', JSON.stringify(posts));
+    }
+
+    updatePost(id, key, value) {
+        var posts = this.getPosts();
+        for(let i = 0; i < posts.length; i++) {
+            if(posts[i].id == id) {
+                posts[i][key] = value;
+            }
+        }
+        localStorage.setItem('posts', JSON.stringify(posts));
+    }
 }
 
-Posts.addPost = function(post) {
-    this.posts.push(post);
-}
+
+var Posts = new postsProvider();
 
 export default Posts;
