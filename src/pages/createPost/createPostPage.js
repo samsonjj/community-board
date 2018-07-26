@@ -4,6 +4,7 @@ import './createPostPage.css';
 import PostsProvider from '../../providers/postsProvider';
 import {Redirect} from 'react-router-dom';
 import UserProvider from '../../providers/userProvider';
+import autosize from 'autosize';
 
 class createPostPage extends Component {
 
@@ -12,10 +13,10 @@ class createPostPage extends Component {
 
         this.state = {
             redirect: '',
-            title: "title",
-            body: "body",
+            title: "",
+            body: "",
             tags: [],
-            postType: false,
+            postType: 'snagger story',
             location: 'Burger Bach',
             rating: 3
         }
@@ -29,7 +30,17 @@ class createPostPage extends Component {
     createPost(event) {
         event.preventDefault();
         console.log('umm');
-        if (this.state.postType === 'location review') {
+
+        if(this.state.title === '') {
+            alert('You must have a title');
+            return;
+        }
+        if(this.state.body === '') {
+            alert('You must have a body');
+            return;
+        }
+
+        if (this.state.postType === 'shift review') {
             PostsProvider.addPost({
                 id: this.uniqueId++,
                 username: UserProvider.getUser.username,
@@ -39,7 +50,7 @@ class createPostPage extends Component {
                 likes: 0,
                 comments: [],
                 date: new Date(),
-                tags: this.state.tags.concat('review')
+                tags: this.state.tags.concat('shift review')
             });
         }
         else {
@@ -65,6 +76,14 @@ class createPostPage extends Component {
         const value = target.value;
         const name = target.name;
 
+
+        if(name === 'tags') {
+            this.setState({
+                tags: value.split(',').map(tag=> tag.trim())
+            })
+            return;
+        }
+
         this.setState({
             [name]: value
         });
@@ -79,16 +98,16 @@ class createPostPage extends Component {
     renderReviewPost() {
         let review;
 
-        if(this.state.postType === 'review') {
+        if(this.state.postType === 'shift review') {
             review =
                 <div>
-                    <label>Location</label>
+                    <label className={'select-description'}>Location</label>
                 <select className="input-location" value={this.state.location} onChange={this.handleInputChange} name="location">
                     <option>Buger Bach</option>
                     <option>Five Guys</option>
                     <option>That Kitchen</option>
                 </select><br/>
-                    <label>Rating</label>
+                    <label className={'select-description'}>Rating</label>
                     <select name="rating" value={this.state.rating} onChange={this.handleInputChange}>
                         <option>1</option>
                         <option>2</option>
@@ -127,18 +146,25 @@ class createPostPage extends Component {
                     <h2 className={'create-title'}>Create your post</h2>
                     <p className={'select-description'}>What is your post about?</p>
                     <select name="postType" onChange={this.handleInputChange}>
-                        <option value="blank">blank</option>
-                        <option value="review">location review</option>
+                        <option value="snagger story">snagger story</option>
+
+                        <option value="shift review">shift review</option>
+                        <option value="snag lunch">snag lunch</option>
+                        <option value="other">blank</option>
+
                     </select>
                     {this.renderReviewPost()}
                     <form onSubmit={this.createPost}>
                         <label>Title</label><br/>
-                        <input className="input-title" type="text" value={this.state.title} name="title" onChange={this.handleInputChange}/><br/>
+                        <textarea className="input-title" type="text" placeholder="title" value={this.state.title} name="title" onChange={this.handleInputChange}/><br/>
                         <label>Body</label><br/>
-                        <input className="input-body" type="text" value={this.state.body} name="body" onChange={this.handleInputChange}/><br/>
+                        <textarea className="input-body" type="text" placeholder="body" value={this.state.body} name="body" onChange={this.handleInputChange}/><br/>
+                        <label>Tags</label><br/>
+                        <input className="input-tags" type="text" placeholder="tags" name="tags" onChange={this.handleInputChange}/><br/>
                         <button type="submit">submit post</button>
                     </form>
                 </div>
+
             </div>
         )
     }

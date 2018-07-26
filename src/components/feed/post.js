@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './post.css';
 import PostsProvider from '../../providers/postsProvider';
 import {Redirect} from 'react-router-dom';
+import ReactDOM from 'react-dom';
 
 class Post extends Component {
     constructor(props) {
@@ -19,7 +20,32 @@ class Post extends Component {
         if(!post.tags) {
             return <div className={"tags"}></div>
         } else {
-            let tags = post.tags.map(t => <span className={"tag"}>{t}</span>)
+            let tags = post.tags.map(t => {
+                let style;
+                switch(t) {
+                    case 'shift review':
+                        style = 'red';
+                        break;
+                    case 'snag lunch':
+                        style = 'yellow';
+                        break;
+                }
+                if(style === undefined) {
+                    style = {};
+                }
+                else {
+                    style = {
+                        background: style
+                    };
+                }
+                return <span className={"tag"} style={style}>{t}</span>
+            })
+            /*for(let i = 0; i < tags.length; i++) {
+                let tag = ReactDOM.findDOMNode(tags[i]);
+                if(tag.innerHTML === 'stuff') {
+                    tag.style.background = 'red';
+                }
+            }*/
             return <div className={"tags"}>{tags}</div>
         }
     }

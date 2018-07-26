@@ -16,14 +16,16 @@ class LiveFeed extends Component {
 
     componentDidMount() {
         var posts = PostsProvider.getPosts();
-            this.setState((prevState) => (
-                {
-                    postsArray: posts.filter(p => !this.props.search || (p.tags && p.tags.includes(this.props.search))).map(
-                        post => (
-                            <Post key={post.id} post={post}></Post>
-                        ))
-                }
-            ));
+        console.log('search query ' + this.props.search);
+
+        this.setState((prevState) => (
+            {
+                postsArray: posts.filter(p => !this.props.search || (p.tags && p.tags.includes(this.props.search))).map(
+                    post => (
+                        <Post key={post.id} post={post}></Post>
+                    ))
+            }
+        ));
     }
 
     render() {

@@ -33,7 +33,7 @@ class Navbar extends Component {
                         <input type="text" id="search" placeholder="Search for..." required/>
                         <input type="submit" value="go" id="submit"/>
                     </form>
-                    <li className="clickable">Location reviews</li>
+                    <li className="clickable" onClick={()=>this.setRedirect('/?search=shift reviews')}>Shift reviews</li>
                     <li className="clickable">Best lunches</li>
                     <li className="clickable">Snagger stories</li>
                     <li className="clickable">Message a snagger</li>
