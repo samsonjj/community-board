@@ -9,6 +9,7 @@
     "react-dom": "^16.4.1",
     "react-router-dom": "^4.3.1",
     "react-scripts": "1.1.4",
+    "react-serialize": "^0.2.0",
     "react-services-injector": "^1.0.0-rc.4",
     "url-search-params-polyfill": "^4.0.1"
   },

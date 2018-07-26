@@ -5,7 +5,7 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
 import posts from './stubs/posts';
-if(localStorage.getItem('posts') == undefined) {
+if(localStorage.getItem('posts') === '') {
     localStorage.setItem('posts', JSON.stringify(posts));
 }
 

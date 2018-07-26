@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import postCss from './post.css';
+import './post.css';
 import PostsProvider from '../../providers/postsProvider';
 import {Redirect} from 'react-router-dom';
 
@@ -44,7 +44,7 @@ class Post extends Component {
     }
 
     refresh() {
-        var post = PostsProvider.getPosts().find(p => this.state.post.id == p.id);
+        var post = PostsProvider.getPosts().find(p => this.state.post.id === p.id);
         this.setState((prevState) => {
             return {
             post: post,
@@ -68,10 +68,10 @@ class Post extends Component {
         return (
         <div>
             <div className="post-titleBar">
-                <div className={"post-likes"}>{post.likes}<img src={"/images/thumbs-up.png"}></img></div>
-                <img className="post-userImage" src={post.userImage}></img>
+                <div className={"post-likes"}>{post.likes}<img src={"/images/thumbs-up.png"} alt={'/favicon.ico'}></img></div>
+                <img className="post-userImage" src={post.userImage} alt={'/favicon.ico'}></img>
                 <p className="post-username">{post.username + " posted " + post.timePassed + " ago"}</p>
-                <p className="post-title">{post.title}</p>
+                <p className="post-title" onClick={()=>this.setRedirect('post/' + post.id)}>{post.title}</p>
                 {this.renderTags(post)}
             </div>
 

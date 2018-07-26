@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import Navbar from '../../components/navbar/navbar';
-import LiveFeed from '../../components/feed/liveFeed';
-import createPostPageCss from './createPostPage.css';
+import './createPostPage.css';
 import PostsProvider from '../../providers/postsProvider';
 import {Redirect} from 'react-router-dom';
+import UserProvider from '../../providers/userProvider';
 
 class createPostPage extends Component {
 
@@ -28,20 +28,34 @@ class createPostPage extends Component {
 
     createPost(event) {
         event.preventDefault();
+        console.log('umm');
+        if (this.state.postType === 'location review') {
+            PostsProvider.addPost({
+                id: this.uniqueId++,
+                username: UserProvider.getUser.username,
+                userImage: UserProvider.getUser.userImage,
+                title: this.state.title,
+                body: <div><p>Review: {this.state.location}<br/>Rating: {this.state.rating}<br/><br/>{this.state.body}</p></div>,
+                likes: 0,
+                comments: [],
+                date: new Date(),
+                tags: this.state.tags.concat('review')
+            });
+        }
+        else {
+            PostsProvider.addPost({
+                id: this.uniqueId++,
+                username: UserProvider.getUser().username,
+                userImage: UserProvider.getUser().userImage,
+                title: this.state.title,
+                body: <div>{this.state.body}</div>,
+                likes: 0,
+                comments: [],
+                date: new Date(),
+                tags: this.state.tags
+            });
+        }
 
-        let body = this.state.postType == 'review' ?
-            <div><p>Review: {this.state.location}<br/>Rating: {this.state.rating}<br/><br/>{this.state.body}</p></div> :
-            <div>{this.state.body}</div>;
-
-        PostsProvider.addPost({
-            id: this.uniqueId++,
-            title: this.state.title,
-            body: body,
-            likes: 0,
-            comments: [],
-            date: new Date(),
-            tags: this.state.tags
-        });
         alert('Your post has been submitted!');
         this.setRedirect();
     }
@@ -110,10 +124,11 @@ class createPostPage extends Component {
                 {this.renderRedirect()}
                 <Navbar></Navbar>
                 <div className="create-post-container">
-                    <h2>Create your post</h2>
+                    <h2 className={'create-title'}>Create your post</h2>
+                    <p className={'select-description'}>What is your post about?</p>
                     <select name="postType" onChange={this.handleInputChange}>
                         <option value="blank">blank</option>
-                        <option value="review">review</option>
+                        <option value="review">location review</option>
                     </select>
                     {this.renderReviewPost()}
                     <form onSubmit={this.createPost}>

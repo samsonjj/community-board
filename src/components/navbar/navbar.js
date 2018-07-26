@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import navbarCss from './navbar.css';
+import './navbar.css';
 import {Redirect} from 'react-router-dom';
 
 class Navbar extends Component {
@@ -10,18 +10,17 @@ class Navbar extends Component {
         }
     }
 
-    setRedirect = () =>{
+    setRedirect = (to) =>{
         this.setState({
-            redirect: true
+            redirect: to
         });
     }
 
     renderRedirect() {
         if(this.state.redirect) {
-            return (
-                <Redirect to='/create'/>
-            )
+            return <Redirect to={this.state.redirect}/>;
         }
+
     }
 
     render() {
@@ -29,7 +28,7 @@ class Navbar extends Component {
             <div className="Navbar">
                 {this.renderRedirect()}
                 <ul>
-                    <li className="clickable">Home</li>
+                    <li className="clickable" onClick={()=>this.setRedirect('/')}>Home</li>
                     <form className="form-wrapper">
                         <input type="text" id="search" placeholder="Search for..." required/>
                         <input type="submit" value="go" id="submit"/>
@@ -39,7 +38,7 @@ class Navbar extends Component {
                     <li className="clickable">Snagger stories</li>
                     <li className="clickable">Message a snagger</li>
                     <br/>
-                    <a href="create"><li className="clickable" onClick={this.setRedirect}>Create a post</li></a>
+                    <a href="create"><li className="clickable" onClick={()=>this.setRedirect('/create')}>Create a post</li></a>
                 </ul>
             </div>
         )

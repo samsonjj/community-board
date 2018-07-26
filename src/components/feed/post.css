@@ -51,6 +51,10 @@
     font-size: 25px;
 }
 
+.Post .post-title:hover {
+    cursor: pointer;
+}
+
 .Post .post-likes {
     position: absolute;
     top: 40px;

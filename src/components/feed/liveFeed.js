@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PostsProvider from '../../providers/postsProvider';
 import Post from './post';
 
-import liveFeedCss from './liveFeed.css';
+import './liveFeed.css';
 
 class LiveFeed extends Component {
 

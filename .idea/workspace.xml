@@ -2,10 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="980917fd-5a71-4722-868f-3ee459d479f2" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/feed/comments.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/feed/comments.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/Comment.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/Heart.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/providers/userProvider.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/feed/comments.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/feed/comments.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/feed/comments.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/feed/comments.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/feed/liveFeed.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/feed/liveFeed.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/feed/post.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/feed/post.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/feed/post.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/feed/post.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/feed/postDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/feed/postDetail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navbar/navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/navbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navbar/navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/createPost/createPostPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/createPost/createPostPage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/createPost/createPostPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/createPost/createPostPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home/homePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/homePage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/postDetail/postDetailPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/postDetail/postDetailPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/providers/postsProvider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/providers/postsProvider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stubs/posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/stubs/posts.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,56 +37,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="comments.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/feed/comments.js">
+      <file leaf-file-name="createPostPage.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/createPost/createPostPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="31" column="68" lean-forward="true" selection-start-line="31" selection-start-column="68" selection-end-line="31" selection-end-column="68" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="comments.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/feed/comments.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="49" column="16" lean-forward="true" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="posts.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/stubs/posts.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="109" column="36" lean-forward="true" selection-start-line="109" selection-start-column="36" selection-end-line="109" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="postDetail.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/feed/postDetail.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="21" lean-forward="true" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="postDetailPage.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/postDetail/postDetailPage.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="22" lean-forward="true" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+            <state relative-caret-position="314">
+              <caret line="126" column="48" selection-start-line="126" selection-start-column="48" selection-end-line="126" selection-end-column="48" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="createPostPage.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/pages/createPost/createPostPage.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="27" column="20" lean-forward="true" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -85,7 +70,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>favicon</find>
       <find>.Post</find>
       <find>tags</find>
       <find>read more</find>
@@ -100,19 +84,22 @@
       <find>refresh</find>
       <find>setState</find>
       <find>console.log</find>
-      <find>console</find>
       <find>width</find>
       <find>body</find>
       <find>clickable</find>
       <find>underline</find>
       <find>conso</find>
       <find>margin</find>
-      <find>render</find>
       <find>setRe</find>
       <find>crea</find>
       <find>like</find>
       <find>comments</find>
       <find>rednd</find>
+      <find>create</find>
+      <find>right</find>
+      <find>console</find>
+      <find>serialize</find>
+      <find>render</find>
     </findStrings>
     <replaceStrings>
       <replace>/favicon</replace>
@@ -139,32 +126,34 @@
         <option value="$PROJECT_DIR$/src/pages/homePage.js" />
         <option value="$PROJECT_DIR$/src/App.css" />
         <option value="$PROJECT_DIR$/src/pages/postDetail/postDetailpage.css" />
-        <option value="$PROJECT_DIR$/src/pages/createPost/createPostPage.css" />
         <option value="$PROJECT_DIR$/src/stubs/locations.js" />
         <option value="$PROJECT_DIR$/src/providers/locationsProvider.js" />
         <option value="$PROJECT_DIR$/src/pages/location/locationPage.js" />
         <option value="$PROJECT_DIR$/src/pages/home/homePage.css" />
-        <option value="$PROJECT_DIR$/src/stubs/posts.js" />
-        <option value="$PROJECT_DIR$/src/pages/home/homePage.js" />
         <option value="$PROJECT_DIR$/src/providers/index.js" />
         <option value="$PROJECT_DIR$/src/stubs/posts.json" />
-        <option value="$PROJECT_DIR$/src/components/feed/liveFeed.js" />
-        <option value="$PROJECT_DIR$/src/providers/postsProvider.js" />
-        <option value="$PROJECT_DIR$/src/index.js" />
-        <option value="$PROJECT_DIR$/src/components/feed/post.css" />
         <option value="$PROJECT_DIR$/src/components/feed/liveFeed.css" />
-        <option value="$PROJECT_DIR$/src/components/navbar/navbar.js" />
         <option value="$PROJECT_DIR$/src/index.css" />
-        <option value="$PROJECT_DIR$/src/components/navbar/navbar.css" />
-        <option value="$PROJECT_DIR$/src/App.js" />
-        <option value="$PROJECT_DIR$/src/pages/createPost/createPostPage.js" />
-        <option value="$PROJECT_DIR$/src/components/feed/post.js" />
         <option value="$PROJECT_DIR$/src/components/feed/postDetail.css" />
-        <option value="$PROJECT_DIR$/src/components/feed/postDetail.js" />
         <option value="$PROJECT_DIR$/src/pages/postDetail/postDetailPage.css" />
-        <option value="$PROJECT_DIR$/src/pages/postDetail/postDetailPage.js" />
         <option value="$PROJECT_DIR$/src/components/feed/comments.css" />
+        <option value="$PROJECT_DIR$/src/components/navbar/navbar.css" />
+        <option value="$PROJECT_DIR$/src/components/feed/liveFeed.js" />
+        <option value="$PROJECT_DIR$/src/pages/home/homePage.js" />
         <option value="$PROJECT_DIR$/src/components/feed/comments.js" />
+        <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/stubs/posts.js" />
+        <option value="$PROJECT_DIR$/src/pages/postDetail/postDetailPage.js" />
+        <option value="$PROJECT_DIR$/src/components/feed/postDetail.js" />
+        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/providers/postsProvider.js" />
+        <option value="$PROJECT_DIR$/src/providers/usersProvider.js" />
+        <option value="$PROJECT_DIR$/src/providers/userProvider.js" />
+        <option value="$PROJECT_DIR$/src/components/feed/post.js" />
+        <option value="$PROJECT_DIR$/src/components/feed/post.css" />
+        <option value="$PROJECT_DIR$/src/components/navbar/navbar.js" />
+        <option value="$PROJECT_DIR$/src/pages/createPost/createPostPage.js" />
+        <option value="$PROJECT_DIR$/src/pages/createPost/createPostPage.css" />
       </list>
     </option>
   </component>
@@ -185,10 +174,10 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="48" />
-    <option name="y" value="-20" />
-    <option name="width" value="1238" />
-    <option name="height" value="664" />
+    <option name="x" value="60" />
+    <option name="y" value="-25" />
+    <option name="width" value="1547" />
+    <option name="height" value="829" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -222,14 +211,20 @@
               <item name="community-board" type="b2602c69:ProjectViewProjectNode" />
               <item name="community-board" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="feed" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="community-board" type="b2602c69:ProjectViewProjectNode" />
               <item name="community-board" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="postDetail" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="community-board" type="b2602c69:ProjectViewProjectNode" />
+              <item name="community-board" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="providers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -239,14 +234,15 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="posts.js&#9;FILE&#9;file://C:/Users/jonathan.samson/WebstormProjects/community-board/src/stubs/posts.js&#10;feed&#9;FILE&#9;file://C:/Users/jonathan.samson/WebstormProjects/community-board/src/components/feed&#10;postDetail&#9;FILE&#9;file://C:/Users/jonathan.samson/WebstormProjects/community-board/src/pages/postDetail/postDetailPage.css&#10;homepa&#9;FILE&#9;file://C:/Users/jonathan.samson/WebstormProjects/community-board/src/pages/home/homePage.js&#10;postDeta&#9;FILE&#9;file://C:/Users/jonathan.samson/WebstormProjects/community-board/src/components/feed/postDetail.js&#10;postDe&#9;FILE&#9;file://C:/Users/jonathan.samson/WebstormProjects/community-board/src/pages/postDetail/postDetailPage.js&#10;postDet&#9;FILE&#9;file://C:/Users/jonathan.samson/WebstormProjects/community-board/src/components/feed/postDetail.css&#10;post.css&#9;FILE&#9;file://C:/Users/jonathan.samson/WebstormProjects/community-board/src/components/feed/post.css&#10;createPostPage&#9;FILE&#9;file://C:/Users/jonathan.samson/WebstormProjects/community-board/src/pages/createPost/createPostPage.js&#10;stubs/po&#9;FILE&#9;file://C:/Users/jonathan.samson/WebstormProjects/community-board/src/stubs/posts.js&#10;post&#9;FILE&#9;file://C:/Users/jonathan.samson/WebstormProjects/community-board/src/components/feed/post.js&#10;createPost&#9;FILE&#9;file://C:/Users/jonathan.samson/WebstormProjects/community-board/src/pages/createPost/createPostPage.css" />
+    <property name="SearchEverywhereHistoryKey" value="create&#9;FILE&#9;file://C:/Users/jonathan.samson/WebstormProjects/community-board/src/pages/createPost/createPostPage.css&#10;post&#9;FILE&#9;file://C:/Users/jonathan.samson/WebstormProjects/community-board/src/components/feed/post.css&#10;index.js&#9;FILE&#9;file://C:/Users/jonathan.samson/WebstormProjects/community-board/src/index.js&#10;posts&#9;FILE&#9;file://C:/Users/jonathan.samson/WebstormProjects/community-board/src/stubs/posts.js&#10;homePage&#9;FILE&#9;file://C:/Users/jonathan.samson/WebstormProjects/community-board/src/pages/home/homePage.js&#10;createPo&#9;FILE&#9;file://C:/Users/jonathan.samson/WebstormProjects/community-board/src/pages/createPost/createPostPage.js&#10;posts.js&#9;FILE&#9;file://C:/Users/jonathan.samson/WebstormProjects/community-board/src/stubs/posts.js&#10;feed&#9;FILE&#9;file://C:/Users/jonathan.samson/WebstormProjects/community-board/src/components/feed&#10;postDetail&#9;FILE&#9;file://C:/Users/jonathan.samson/WebstormProjects/community-board/src/pages/postDetail/postDetailPage.css&#10;homepa&#9;FILE&#9;file://C:/Users/jonathan.samson/WebstormProjects/community-board/src/pages/home/homePage.js&#10;postDeta&#9;FILE&#9;file://C:/Users/jonathan.samson/WebstormProjects/community-board/src/components/feed/postDetail.js&#10;postDe&#9;FILE&#9;file://C:/Users/jonathan.samson/WebstormProjects/community-board/src/pages/postDetail/postDetailPage.js&#10;postDet&#9;FILE&#9;file://C:/Users/jonathan.samson/WebstormProjects/community-board/src/components/feed/postDetail.css&#10;post.css&#9;FILE&#9;file://C:/Users/jonathan.samson/WebstormProjects/community-board/src/components/feed/post.css&#10;createPostPage&#9;FILE&#9;file://C:/Users/jonathan.samson/WebstormProjects/community-board/src/pages/createPost/createPostPage.js&#10;stubs/po&#9;FILE&#9;file://C:/Users/jonathan.samson/WebstormProjects/community-board/src/stubs/posts.js&#10;createPost&#9;FILE&#9;file://C:/Users/jonathan.samson/WebstormProjects/community-board/src/pages/createPost/createPostPage.css" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../services-test" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -283,12 +279,12 @@
       <workItem from="1532021681128" duration="4841000" />
       <workItem from="1532306508212" duration="5021000" />
       <workItem from="1532370903808" duration="31210000" />
-      <workItem from="1532540549096" duration="18563000" />
+      <workItem from="1532540549096" duration="25435000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69905000" />
+    <option name="totallyTimeSpent" value="76777000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -321,33 +317,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/navbar/navbar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/home/homePage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/home/homePage.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/navbar/navbar.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -536,27 +505,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/feed/liveFeed.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/stubs/posts.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="188">
           <caret line="112" column="30" selection-start-line="112" selection-start-column="30" selection-end-line="112" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/providers/postsProvider.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
@@ -574,81 +526,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/navbar/navbar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="31" column="50" selection-start-line="31" selection-start-column="50" selection-end-line="31" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/navbar/navbar.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="74" column="24" selection-start-line="74" selection-start-column="24" selection-end-line="74" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/createPost/createPostPage.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/feed/post.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/feed/post.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="67" column="8" lean-forward="true" selection-start-line="67" selection-start-column="8" selection-end-line="87" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/createPost/createPostPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1309">
-          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="36" column="27" lean-forward="true" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/home/homePage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="22" lean-forward="true" selection-start-line="1" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/feed/postDetail.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="303">
@@ -663,47 +540,158 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/stubs/posts.js">
+    <entry file="file://$PROJECT_DIR$/src/components/feed/comments.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="109" column="36" lean-forward="true" selection-start-line="109" selection-start-column="36" selection-end-line="109" selection-end-column="36" />
+        <state relative-caret-position="267">
+          <caret line="40" column="15" selection-start-line="40" selection-start-column="15" selection-end-line="40" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/postDetail/postDetailPage.js">
+    <entry file="file://$PROJECT_DIR$/src/components/navbar/navbar.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="22" lean-forward="true" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+        <state relative-caret-position="236">
+          <caret line="63" column="47" selection-start-line="63" selection-start-column="47" selection-end-line="63" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/feed/liveFeed.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="41" lean-forward="true" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/feed/postDetail.js">
+    <entry file="file://$PROJECT_DIR$/src/pages/home/homePage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="21" lean-forward="true" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+        <state relative-caret-position="221">
+          <caret line="13" column="33" lean-forward="true" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/feed/comments.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="49" column="16" lean-forward="true" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/feed/comments.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="68" lean-forward="true" selection-start-line="31" selection-start-column="68" selection-end-line="31" selection-end-column="68" />
+        <state relative-caret-position="365">
+          <caret line="34" column="21" lean-forward="true" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="35" column="37" lean-forward="true" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stubs/posts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="59" selection-start-line="9" selection-start-column="59" selection-end-line="9" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/postDetail/postDetailPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/providers/usersProvider.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/providers/userProvider.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/providers/postsProvider.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="50" lean-forward="true" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/feed/post.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="73" column="89" selection-start-line="73" selection-start-column="89" selection-end-line="73" selection-end-column="89" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/feed/post.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="37" column="28" lean-forward="true" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/feed/postDetail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="62" column="33" lean-forward="true" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/navbar/navbar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="41" column="21" lean-forward="true" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/createPost/createPostPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="126" column="48" selection-start-line="126" selection-start-column="48" selection-end-line="126" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/createPost/createPostPage.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="20" lean-forward="true" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
         </state>
       </provider>
     </entry>

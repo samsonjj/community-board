@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import HomePage from './pages/home/homePage';
 import CreatePostPage from './pages/createPost/createPostPage';
 import PostDetailPage from './pages/postDetail/postDetailPage';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import {injector} from 'react-services-injector';
 import {Redirect} from 'react-router-dom';
 
 
@@ -36,7 +34,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className="home-header">
-            <img onClick={this.setRedirect} width="100%" src="/images/snagwork.PNG" position="fixed"/>
+            <img onClick={this.setRedirect} width="100%" src="/images/snagwork.PNG" position="fixed" alt={'favicon.ico'}/>
         </div>
           <Router>
             <div>

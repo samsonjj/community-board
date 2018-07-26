@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import CommentsCss from './comments.css';
+import './comments.css';
 
 export default class Comments extends Component {
 
@@ -24,12 +24,12 @@ export default class Comments extends Component {
                     return (
                         <div className={'comment'}>
                             <div className={'comment-user'}>
-                                <img className={'comment-userImage'} src={comment.userImage}/>
+                                <img className={'comment-userImage'} alt={'favicon.ico'} src={comment.userImage}/>
                                 <p className={'comment-username'}>{comment.username}</p>
                             </div>
                             <div className={'comment-body'}>{comment.body}</div>
                             <div className={'comment-actions'}>
-                                <img src={'/images/thumbs-up.png'}/>
+                                <img src={'/images/thumbs-up.png'} alt={'favicon.ico'}/>
                             </div>
                         </div>
                     )
