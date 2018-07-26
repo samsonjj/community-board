@@ -3,6 +3,7 @@ import Navbar from '../../components/navbar/navbar';
 import LiveFeed from '../../components/feed/liveFeed';
 import createPostPageCss from './createPostPage.css';
 import PostsProvider from '../../providers/postsProvider';
+import {Redirect} from 'react-router-dom';
 
 class createPostPage extends Component {
 
@@ -10,6 +11,7 @@ class createPostPage extends Component {
         super(props);
 
         this.state = {
+            redirect: '',
             title: "title",
             body: "body",
             tags: [],
@@ -25,16 +27,23 @@ class createPostPage extends Component {
     }
 
     createPost(event) {
-        alert('it works!');
+        event.preventDefault();
+
+        let body = this.state.postType == 'review' ?
+            <div><p>Review: {this.state.location}<br/>Rating: {this.state.rating}<br/><br/>{this.state.body}</p></div> :
+            <div>{this.state.body}</div>;
+
         PostsProvider.addPost({
             id: this.uniqueId++,
             title: this.state.title,
-            body: this.state.body,
+            body: body,
             likes: 0,
             comments: [],
+            date: new Date(),
             tags: this.state.tags
         });
-        event.preventDefault();
+        alert('Your post has been submitted!');
+        this.setRedirect();
     }
 
     handleInputChange(event) {
@@ -81,11 +90,24 @@ class createPostPage extends Component {
         return review;
     }
 
+    setRedirect() {
+        this.setState({
+            redirect: 'home'
+        });
+        console.log('done');
+    }
+
+    renderRedirect() {
+        if(this.state.redirect === 'home') {
+            return <Redirect to={"/"}></Redirect>
+        }
+    }
+
     render() {
 
         return (
             <div className="CreatePostPage">
-
+                {this.renderRedirect()}
                 <Navbar></Navbar>
                 <div className="create-post-container">
                     <h2>Create your post</h2>
@@ -102,7 +124,6 @@ class createPostPage extends Component {
                         <button type="submit">submit post</button>
                     </form>
                 </div>
-
             </div>
         )
     }

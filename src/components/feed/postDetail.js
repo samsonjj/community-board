@@ -46,7 +46,7 @@ class PostDetail extends Component {
     render() {
         return (
 
-            <div className={"PostDetail"}>{this.getPostBody(this.state.postId)}</div>
+            <div className={"Post"}>{this.getPostBody(this.state.postId)}</div>
 
         );
     }

@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import postCss from './post.css';
 import PostsProvider from '../../providers/postsProvider';
+import {Redirect} from 'react-router-dom';
 
 class Post extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            redirect: '',
             post: props.post,
             postBody: this.postBody(props.post)
         }
@@ -23,7 +25,7 @@ class Post extends Component {
     }
 
     renderBody(post) {
-        const characterCap = 150;
+        /*const characterCap = 150;
         if(!post.body) {
             <p className="post-body"></p>
         } else {
@@ -32,7 +34,8 @@ class Post extends Component {
             } else {
                 return <p className="post-body">{post.body.substr(0, 150) + '. . . '}<a href="https://google.com">read more</a></p>
             }
-        }
+        }*/
+        return post.body;
     }
 
     onLike(event) {
@@ -49,6 +52,17 @@ class Post extends Component {
         }});
     }
 
+    setRedirect(to) {
+        this.setState({
+            redirect: to
+        });
+    }
+
+    renderRedirect() {
+        if(this.state.redirect !== '') {
+            return <Redirect to={this.state.redirect}></Redirect>;
+        }
+    }
 
     postBody(post) {
         return (
@@ -66,8 +80,9 @@ class Post extends Component {
             </div>
 
             <div className="post-actions">
-                <span>Comments</span>
+                <span className={"clickable"} onClick={() => this.setRedirect('post/' + post.id)}>Comments ({post.comments.length})</span>
                 <span className={"clickable"} onClick={() => this.onLike()}>Like</span>
+                <span>Report</span>
             </div>
         </div>
         )
@@ -76,6 +91,7 @@ class Post extends Component {
     render() {
         return (
             <div className="Post">
+                {this.renderRedirect()}
                 {this.state.postBody}
             </div>
         )

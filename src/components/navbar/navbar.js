@@ -29,8 +29,11 @@ class Navbar extends Component {
             <div className="Navbar">
                 {this.renderRedirect()}
                 <ul>
-                    <li>Search for a post</li>
-                    <input type="text"></input>
+                    <li className="clickable">Home</li>
+                    <form className="form-wrapper">
+                        <input type="text" id="search" placeholder="Search for..." required/>
+                        <input type="submit" value="go" id="submit"/>
+                    </form>
                     <li className="clickable">Location reviews</li>
                     <li className="clickable">Best lunches</li>
                     <li className="clickable">Snagger stories</li>

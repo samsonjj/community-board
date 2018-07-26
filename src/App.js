@@ -43,7 +43,7 @@ class App extends Component {
                 {this.renderRedirect()}
                 <Route path="/create" component={CreatePostPage}/>
                 <Route path="/post/:postId" component={PostDetailPage}/>
-                <Route path="/" component={HomePage}/>
+                <Route exact path="/" component={HomePage}/>
             </div>
           </Router>
       </div>
