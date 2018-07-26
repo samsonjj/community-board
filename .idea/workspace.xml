@@ -2,28 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="980917fd-5a71-4722-868f-3ee459d479f2" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/Comment.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/Heart.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/providers/userProvider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/feed/comments.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/feed/comments.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/feed/comments.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/feed/comments.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/feed/liveFeed.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/feed/liveFeed.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/feed/post.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/feed/post.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/feed/post.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/feed/post.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/feed/postDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/feed/postDetail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navbar/navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/navbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navbar/navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/navbar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/createPost/createPostPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/createPost/createPostPage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/createPost/createPostPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/createPost/createPostPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/home/homePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/homePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/postDetail/postDetailPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/postDetail/postDetailPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/providers/postsProvider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/providers/postsProvider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stubs/posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/stubs/posts.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -49,7 +28,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="createPostPage.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="createPostPage.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/createPost/createPostPage.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="459">
@@ -145,7 +136,6 @@
         <option value="$PROJECT_DIR$/src/stubs/posts.js" />
         <option value="$PROJECT_DIR$/src/pages/postDetail/postDetailPage.js" />
         <option value="$PROJECT_DIR$/src/components/feed/postDetail.js" />
-        <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/providers/postsProvider.js" />
         <option value="$PROJECT_DIR$/src/providers/usersProvider.js" />
         <option value="$PROJECT_DIR$/src/providers/userProvider.js" />
@@ -154,6 +144,7 @@
         <option value="$PROJECT_DIR$/src/components/navbar/navbar.js" />
         <option value="$PROJECT_DIR$/src/pages/createPost/createPostPage.js" />
         <option value="$PROJECT_DIR$/src/pages/createPost/createPostPage.css" />
+        <option value="$PROJECT_DIR$/src/index.js" />
       </list>
     </option>
   </component>
@@ -279,12 +270,12 @@
       <workItem from="1532021681128" duration="4841000" />
       <workItem from="1532306508212" duration="5021000" />
       <workItem from="1532370903808" duration="31210000" />
-      <workItem from="1532540549096" duration="25435000" />
+      <workItem from="1532540549096" duration="25912000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76777000" />
+    <option name="totallyTimeSpent" value="77254000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -614,16 +605,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/providers/usersProvider.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -692,6 +673,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="27" column="20" lean-forward="true" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
