@@ -22,7 +22,7 @@ export default class Comments extends Component {
             return({
                 commentsArray: prevState.comments.map(comment => {
                     return (
-                        <div className={'comment'}>
+                        <div className={'comment'} key={Math.random()}>
                             <div className={'comment-user'}>
                                 <img className={'comment-userImage'} alt={'favicon.ico'} src={comment.userImage}/>
                                 <p className={'comment-username'}>{comment.username}</p>

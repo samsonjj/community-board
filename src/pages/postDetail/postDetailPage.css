@@ -1,9 +1,36 @@
 .PostDetailPage {
-    padding: 150px;
+    padding-left: 400px;
+    padding-top: 170px;
 }
 
 .detail-post-container {
-    margin-left: 250px;
     margin-top: 20px;
+}
 
+.PostDetailPage .comment-form {
+    margin-top: -40px;
+    text-align: left;
+    width: 700px;
+
+}
+
+.PostDetailPage .comment-title {
+    margin-left: 0px;
+}
+
+.PostDetailPage .comment-input-body {
+    width: 600px;
+    height: 100px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: 'Nunito';
+    text-align: left;
+    padding-left: 10px;
+    margin-left: 0px;
+    display: inline;
+    margin-bottom: 20px;
+}
+
+.PostDetailPage .comment-submit {
+    float: right;
 }

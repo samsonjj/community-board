@@ -1,13 +1,18 @@
 import React, { Component } from 'react';
 import './navbar.css';
 import {Redirect} from 'react-router-dom';
+import {injector} from 'react-services-injector';
 
 class Navbar extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            redirect: false
+            redirect: false,
+            searchTerm: ''
         }
+
+        this.onSearch = this.onSearch.bind(this);
+        this.handleInputChange = this.handleInputChange.bind(this);
     }
 
     setRedirect = (to) =>{
@@ -23,17 +28,39 @@ class Navbar extends Component {
 
     }
 
+    setSearch(to) {
+        this.services.searchService.setSearch(to);
+        console.log('search ' + this.services.searchService.search);
+        this.setRedirect('/');
+    }
+
+    onSearch(event) {
+        event.preventDefault();
+        this.setSearch(this.state.searchTerm);
+        console.log(this.state.searchTerm);
+    }
+
+    handleInputChange(event) {
+        const target = event.target;
+        const value = target.value;
+        const name = target.name;
+
+        this.setState({
+            [name]: value
+        });
+    }
+
     render() {
         return(
             <div className="Navbar">
                 {this.renderRedirect()}
                 <ul>
-                    <li className="clickable" onClick={()=>this.setRedirect('/')}>Home</li>
+                    <li className="clickable" onClick={()=>this.setSearch('')}>Home</li>
                     <form className="form-wrapper">
-                        <input type="text" id="search" placeholder="Search for..." required/>
-                        <input type="submit" value="go" id="submit"/>
+                        <input name="searchTerm" type="text" id="search" placeholder="Search for..." value={this.state.searchTerm} onChange={this.handleInputChange} required onSubmit={this.onSearch}/>
+                        <input type="submit" value="go" id="submit" onClick={this.onSearch}/>
                     </form>
-                    <li className="clickable" onClick={()=>this.setRedirect('/?search=shift reviews')}>Shift reviews</li>
+                    <li className="clickable" onClick={()=>this.setSearch('shift review')}>Shift reviews</li>
                     <li className="clickable">Best lunches</li>
                     <li className="clickable">Snagger stories</li>
                     <li className="clickable">Message a snagger</li>
@@ -45,4 +72,6 @@ class Navbar extends Component {
     }
 }
 
-export default Navbar;
+export default injector.connect(Navbar, {
+    toRender: []
+});

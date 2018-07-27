@@ -23,7 +23,7 @@ var posts = [
         ],
         tags: ["stuff", "tag1", "tag2", "tag3"]
     },{
-        id: "123456789",
+        id: "223456789",
         username: "Jonathan Samson",
         userImage: "/favicon.ico",
         timePassed: "4 hours",
@@ -44,7 +44,7 @@ var posts = [
         ],
         tags: ["stuff", "tag1", "tag2", "tag3"]
     },{
-        id: "123456789",
+        id: "323456789",
         username: "Jonathan Samson",
         userImage: "/favicon.ico",
         timePassed: "4 hours",
@@ -65,7 +65,7 @@ var posts = [
         ],
         tags: ["stuff", "tag1", "tag2", "tag3"]
     },{
-        id: "123456789",
+        id: "423456789",
         username: "Jonathan Samson",
         userImage: "/favicon.ico",
         timePassed: "4 hours",
@@ -86,7 +86,7 @@ var posts = [
         ],
         tags: ["stuff", "tag1", "tag2", "tag3"]
     },{
-        id: "123456789",
+        id: "523456789",
         username: "Jonathan Samson",
         userImage: "/favicon.ico",
         timePassed: "4 hours",

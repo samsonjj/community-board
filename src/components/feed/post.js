@@ -29,6 +29,9 @@ class Post extends Component {
                     case 'snag lunch':
                         style = 'yellow';
                         break;
+                    case 'bug report':
+                        style = 'orange'
+                        break;
                 }
                 if(style === undefined) {
                     style = {};
@@ -38,7 +41,7 @@ class Post extends Component {
                         background: style
                     };
                 }
-                return <span className={"tag"} style={style}>{t}</span>
+                return <span className={"tag"} key={t} style={style}>{t}</span>
             })
             /*for(let i = 0; i < tags.length; i++) {
                 let tag = ReactDOM.findDOMNode(tags[i]);
@@ -91,6 +94,7 @@ class Post extends Component {
     }
 
     postBody(post) {
+        console.log('hello: ' + post);
         return (
         <div>
             <div className="post-titleBar">

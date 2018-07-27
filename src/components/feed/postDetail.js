@@ -6,6 +6,7 @@ import {Redirect} from 'react-router-dom';
 class PostDetail extends Component {
     constructor(props) {
         super(props);
+        console.log(props.post);
         this.state = {
             redirect: '',
             post: props.post,
@@ -19,7 +20,7 @@ class PostDetail extends Component {
         if(!post.tags) {
             return <div className={"tags"}></div>
         } else {
-            let tags = post.tags.map(t => <span className={"tag"}>{t}</span>)
+            let tags = post.tags.map(t => <span key={t} className={"tag"}>{t}</span>)
             return <div className={"tags"}>{tags}</div>
         }
     }

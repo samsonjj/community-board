@@ -40,32 +40,29 @@ class createPostPage extends Component {
             return;
         }
 
+        let post = {
+            id: this.uniqueId++,
+            username: UserProvider.getUser().username,
+            userImage: UserProvider.getUser().userImage,
+            title: this.state.title,
+            body: <div>{this.state.body}</div>,
+            likes: 0,
+            comments: [],
+            date: new Date(),
+            tags: this.state.tags
+
+        }
+
         if (this.state.postType === 'shift review') {
-            PostsProvider.addPost({
-                id: this.uniqueId++,
-                username: UserProvider.getUser.username,
-                userImage: UserProvider.getUser.userImage,
-                title: this.state.title,
-                body: <div><p>Review: {this.state.location}<br/>Rating: {this.state.rating}<br/><br/>{this.state.body}</p></div>,
-                likes: 0,
-                comments: [],
-                date: new Date(),
-                tags: this.state.tags.concat('shift review')
-            });
+            post.body = <div><p>Review: {this.state.location}<br/>Rating: {this.state.rating}<br/><br/>{this.state.body}</p></div>;
+            post.tags = this.state.tags.concat('shift review');
         }
-        else {
-            PostsProvider.addPost({
-                id: this.uniqueId++,
-                username: UserProvider.getUser().username,
-                userImage: UserProvider.getUser().userImage,
-                title: this.state.title,
-                body: <div>{this.state.body}</div>,
-                likes: 0,
-                comments: [],
-                date: new Date(),
-                tags: this.state.tags
-            });
+        else if (this.state.postType === 'bug report') {
+
         }
+
+        PostsProvider.addPost(post);
+
 
         alert('Your post has been submitted!');
         this.setRedirect();
@@ -147,10 +144,10 @@ class createPostPage extends Component {
                     <p className={'select-description'}>What is your post about?</p>
                     <select name="postType" onChange={this.handleInputChange}>
                         <option value="snagger story">snagger story</option>
-
                         <option value="shift review">shift review</option>
                         <option value="snag lunch">snag lunch</option>
-                        <option value="other">blank</option>
+                        <option value="bug report">bug report</option>
+                        <option value="other">other</option>
 
                     </select>
                     {this.renderReviewPost()}

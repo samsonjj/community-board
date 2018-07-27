@@ -6,7 +6,6 @@ class postsProvider {
         var posts = JSON.parse(localStorage.getItem('posts'));
         for(let i = 0; i < posts.length; i++)
         {
-            console.log(posts[i]);
             posts[i].body = deserialize(posts[i].body);
         }
         return posts;
