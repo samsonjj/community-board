@@ -9,6 +9,7 @@ var posts = [
         title: "This is a title",
         body: <p><img src="favicon.ico" alt={'favicon.ico'}/>This is a body This is a bodyThis is a bodyThis is a bodyThis is a bodyThis is a bodyThis is a bodyThis is a bodybodyThis is a bodyThis is a bodyThis is a bodyThis is a bodyThis is a bodyThis is a bodybodyThis is a bodyThis is a bodyThis is a bodyThis is a bodyThis is a bodyThis is a bodybodyThis is a bodyThis is a bodyThis is a bodyThis is a bodyThis is a bodyThis is a body</p>,
         likes: 50,
+        date: new Date(),
         comments: [
             {
                 username: "Jonathan Samson",
@@ -30,6 +31,7 @@ var posts = [
         title: "This is a title",
         body: <p>This is a body This is a bodyThis is a bodyThis is a bodyThis is a bodyThis is a bodyThis is a bodyThis is a bodybodyThis is a bodyThis is a bodyThis is a bodyThis is a bodyThis is a bodyThis is a bodybodyThis is a bodyThis is a bodyThis is a bodyThis is a bodyThis is a bodyThis is a bodybodyThis is a bodyThis is a bodyThis is a bodyThis is a bodyThis is a bodyThis is a body</p>,
         likes: 50,
+        date: new Date(),
         comments: [
             {
                 username: "Jonathan Samson",
@@ -51,6 +53,7 @@ var posts = [
         title: "This is a title",
         body: <p>This is a body This is a bodyThis is a bodyThis is a bodyThis is a bodyThis is a bodyThis is a bodyThis is a bodybodyThis is a bodyThis is a bodyThis is a bodyThis is a bodyThis is a bodyThis is a bodybodyThis is a bodyThis is a bodyThis is a bodyThis is a bodyThis is a bodyThis is a bodybodyThis is a bodyThis is a bodyThis is a bodyThis is a bodyThis is a bodyThis is a body</p>,
         likes: 50,
+        date: new Date(),
         comments: [
             {
                 username: "Jonathan Samson",
@@ -72,6 +75,8 @@ var posts = [
         title: "This is a title",
         body: <p>This is a body This is a bodyThis is a bodyThis is a bodyThis is a bodyThis is a bodyThis is a bodyThis is a bodybodyThis is a bodyThis is a bodyThis is a bodyThis is a bodyThis is a bodyThis is a bodybodyThis is a bodyThis is a bodyThis is a bodyThis is a bodyThis is a bodyThis is a bodybodyThis is a bodyThis is a bodyThis is a bodyThis is a bodyThis is a bodyThis is a body</p>,
         likes: 50,
+
+        date: new Date(),
         comments: [
             {
                 username: "Jonathan Samson",
@@ -93,6 +98,7 @@ var posts = [
         title: "This is a title",
         body: <p>This is a body This is a bodyThis is a bodyThis is a bodyThis is a bodyThis is a bodyThis is a bodyThis is a bodybodyThis is a bodyThis is a bodyThis is a bodyThis is a bodyThis is a bodyThis is a bodybodyThis is a bodyThis is a bodyThis is a bodyThis is a bodyThis is a bodyThis is a bodybodyThis is a bodyThis is a bodyThis is a bodyThis is a bodyThis is a bodyThis is a body</p>,
         likes: 50,
+        date: new Date(),
         comments: [
             {
                 username: "Jonathan Samson",

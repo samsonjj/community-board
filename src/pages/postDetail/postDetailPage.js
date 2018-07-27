@@ -17,6 +17,8 @@ class PostDetailPage extends Component {
             post: Posts.getPosts().find(function(element) {
                 return element.id === postId})
         }
+        console.log(Posts.getPosts());
+        console.log(postId);
 
         this.handleInputChange = this.handleInputChange.bind(this);
         this.onSubmitComment = this.onSubmitComment.bind(this);
@@ -57,6 +59,7 @@ class PostDetailPage extends Component {
             <div className="PostDetailPage">
                 <Navbar></Navbar>
                 <div className={'detail-post-container'}>
+                    {console.log(post)}
                     <Post post={post}></Post>
                 </div>
                 <form className="comment-form" onSubmit={this.onSubmitComment}>

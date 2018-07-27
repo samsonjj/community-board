@@ -3,6 +3,8 @@ import './App.css';
 import HomePage from './pages/home/homePage';
 import CreatePostPage from './pages/createPost/createPostPage';
 import PostDetailPage from './pages/postDetail/postDetailPage';
+import ReportPage from './pages/report/reportPage';
+import RedirectPage from './pages/redirectPage';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import {Redirect} from 'react-router-dom';
 
@@ -41,6 +43,8 @@ class App extends Component {
                 {this.renderRedirect()}
                 <Route path="/create" component={CreatePostPage}/>
                 <Route path="/post/:postId" component={PostDetailPage}/>
+                <Route path="/report/:postId" component={ReportPage}/>
+                <Route path="/redirect" component={RedirectPage}/>
                 <Route exact path="/" component={HomePage}/>
             </div>
           </Router>

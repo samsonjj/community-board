@@ -42,13 +42,7 @@ class Post extends Component {
                     };
                 }
                 return <span className={"tag"} key={t} style={style}>{t}</span>
-            })
-            /*for(let i = 0; i < tags.length; i++) {
-                let tag = ReactDOM.findDOMNode(tags[i]);
-                if(tag.innerHTML === 'stuff') {
-                    tag.style.background = 'red';
-                }
-            }*/
+            });
             return <div className={"tags"}>{tags}</div>
         }
     }
@@ -110,9 +104,9 @@ class Post extends Component {
             </div>
 
             <div className="post-actions">
-                <span className={"clickable"} onClick={() => this.setRedirect('post/' + post.id)}>Comments ({post.comments.length})</span>
+                <span className={"clickable"} onClick={() => this.setRedirect('/post/' + post.id)}>Comments ({post.comments.length})</span>
                 <span className={"clickable"} onClick={() => this.onLike()}>Like</span>
-                <span>Report</span>
+                <span className={"clickable"} onClick={() => this.setRedirect('/report/' + post.id)}>Report</span>
             </div>
         </div>
         )

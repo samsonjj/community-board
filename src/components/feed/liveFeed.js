@@ -42,7 +42,12 @@ class LiveFeed extends Component {
         let result = posts.filter(p => !searchTerm || (p.tags && p.tags.includes(searchTerm))).map(
             post => (
                 <Post key={post.id} post={post}></Post>
-            ))
+            )
+        ).sort((a, b)=>{
+            a = a.date;
+            b = b.date;
+            return a>b ? -1 : a<b ? 1 : 0;
+        });
 
         return result;
 

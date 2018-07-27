@@ -4,7 +4,7 @@ class searchService extends Service {
 
     constructor() {
         super();
-        this.searchTerm = 'hello';
+        this.searchTerm = '';
     }
 
     get search() {

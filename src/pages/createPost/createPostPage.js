@@ -21,8 +21,6 @@ class createPostPage extends Component {
             rating: 3
         }
 
-        this.uniqueId = 7777777;
-
         this.createPost = this.createPost.bind(this);
         this.handleInputChange = this.handleInputChange.bind(this);
     }
@@ -41,7 +39,7 @@ class createPostPage extends Component {
         }
 
         let post = {
-            id: this.uniqueId++,
+            id: localStorage.getItem('uniqueId')+'',
             username: UserProvider.getUser().username,
             userImage: UserProvider.getUser().userImage,
             title: this.state.title,
@@ -52,6 +50,7 @@ class createPostPage extends Component {
             tags: this.state.tags
 
         }
+        localStorage.setItem('uniqueId', (localStorage.getItem('uniqueId') + 1)+'');
 
         if (this.state.postType === 'shift review') {
             post.body = <div><p>Review: {this.state.location}<br/>Rating: {this.state.rating}<br/><br/>{this.state.body}</p></div>;
