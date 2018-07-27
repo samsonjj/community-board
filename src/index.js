@@ -9,9 +9,9 @@ if(localStorage.getItem('posts') === '' || localStorage.getItem('posts') === und
     localStorage.setItem('posts', JSON.stringify(posts));
 }
 
-if(localStorage.getItem('version') !== '5') {
+if(localStorage.getItem('version') !== '6') {
     localStorage.setItem('posts', JSON.stringify(posts));
-    localStorage.setItem('version', '5');
+    localStorage.setItem('version', '6');
 }
 
 
