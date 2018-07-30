@@ -29,6 +29,8 @@
     margin: 10px;
     float: left;
     display: inline-block;
+    border-radius: 50%;
+    width: 75px;
 }
 
 .Post .post-username {

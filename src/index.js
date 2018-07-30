@@ -6,14 +6,16 @@ import registerServiceWorker from './registerServiceWorker';
 import {injector} from 'react-services-injector';
 import services from './services';
 
-import posts from './stubs/posts';
+import posts from './stubs/betterPosts';
 if(localStorage.getItem('posts') === '' || localStorage.getItem('posts') === undefined) {
     localStorage.setItem('posts', JSON.stringify(posts));
 }
 
-if(localStorage.getItem('version') !== '9') {
+var version = 11;
+
+if(localStorage.getItem('version') !== version) {
     localStorage.setItem('posts', JSON.stringify(posts));
-    localStorage.setItem('version', '9');
+    localStorage.setItem('version', version);
 }
 
 injector.register(services);

@@ -42,6 +42,7 @@ class createPostPage extends Component {
             id: localStorage.getItem('uniqueId')+'',
             username: UserProvider.getUser().username,
             userImage: UserProvider.getUser().userImage,
+            timePassed: '1 minute',
             title: this.state.title,
             body: <div>{this.state.body}</div>,
             likes: 0,

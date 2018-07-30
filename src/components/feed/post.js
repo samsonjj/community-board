@@ -30,7 +30,16 @@ class Post extends Component {
                         style = 'yellow';
                         break;
                     case 'bug report':
-                        style = 'orange'
+                        style = 'orange';
+                        break;
+                    case 'question':
+                        style = 'blue';
+                        break;
+                    case 'shift issue':
+                        style = 'purple';
+                        break;
+                    case 'available shift':
+                        style = 'indigo';
                         break;
                 }
                 if(style === undefined) {
