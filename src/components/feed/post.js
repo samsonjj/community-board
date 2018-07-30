@@ -26,8 +26,8 @@ class Post extends Component {
                     case 'shift review':
                         style = 'red';
                         break;
-                    case 'snag lunch':
-                        style = 'yellow';
+                    case 'shift meal':
+                        style = '#3D9970';
                         break;
                     case 'bug report':
                         style = 'orange';
@@ -40,6 +40,9 @@ class Post extends Component {
                         break;
                     case 'available shift':
                         style = 'indigo';
+                        break;
+                    case 'snagger story':
+                        style = 'red';
                         break;
                 }
                 if(style === undefined) {

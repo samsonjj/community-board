@@ -1,17 +1,12 @@
 import React, {Component} from 'react';
 import Posts from '../../providers/postsProvider';
 import LiveFeed from '../../components/feed/liveFeed';
-import Locations from '../../providers/locationsProvider';
 
-class LocationPage extends Component {
+export default class LocationPage extends Component {
 
 
     constructor(props) {
         super(props);
-        let locationName = this.props.match.params.name;
-        let locations = Locations.getLocations();
-        let location = locations.find(loc => loc.name === locationName);
-        this.state.location = location;
     }
 
     render() {
@@ -19,11 +14,11 @@ class LocationPage extends Component {
 
             <div className={"locationPage"}>
                 <div classname="location-info">
-                    <img className="location-image" src={this.state.location.locationImage}></img>
-                    <h1 className={"location-name"}>{this.location.name}</h1>
-                    <h2 className={"location-description"}>{this.state.location.description}</h2>
+                    <img className="location-image" src={'/images/mcdonalds.jpg'}></img>
+                    <h1 className={"location-name"}>{'McDonalds'}</h1>
+                    <h2 className={"location-description"}>{'McDonald\'s is an American fast food company, founded in 1940 as a restaurant operated by Richard and Maurice McDonald, in San Bernardino, California, United States'}</h2>
                 </div>
-                <LiveFeed search={this.state.location.name}/>
+                <LiveFeed search={'McDonalds'}/>
 
             </div>
 

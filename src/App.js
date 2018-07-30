@@ -7,7 +7,7 @@ import ReportPage from './pages/report/reportPage';
 import RedirectPage from './pages/redirectPage';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import {Redirect} from 'react-router-dom';
-
+import LocationPage from './pages/location/locationPage';
 
 class App extends Component {
     constructor(props) {
@@ -38,6 +38,12 @@ class App extends Component {
         <div className="home-header">
             <img onClick={this.setRedirect} width="100%" src="/images/snagwork.PNG" position="fixed" alt={'favicon.ico'}/>
         </div>
+
+          <select className={'space-select'}>
+              <option>Richmond, Virginia</option>
+              <option>D.C.</option>
+              <option>Dallas, Texas</option>
+          </select>
           <Router>
             <div>
                 {this.renderRedirect()}
@@ -45,6 +51,7 @@ class App extends Component {
                 <Route path="/post/:postId" component={PostDetailPage}/>
                 <Route path="/report/:postId" component={ReportPage}/>
                 <Route path="/redirect" component={RedirectPage}/>
+                <Route path="/location" component={LocationPage}/>
                 <Route exact path="/" component={HomePage}/>
             </div>
           </Router>

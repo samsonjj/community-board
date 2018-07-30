@@ -2,28 +2,6 @@ import React from 'react';
 
 var betterPosts = [
     {
-        id: "100",
-        username: "Thomas Jefferson",
-        userImage: "/images/tj.jpg",
-        timePassed: "4 hours",
-        title: "This is a title",
-        body: <p><img src="favicon.ico" alt={'favicon.ico'}/>is a bodyThis is a bodyThis is a bodyThis is a bodyThis is a bodyThis is a bodybodyThis is a bodyThis is a bodyThis is a bodyThis is a bodyThis is a bodyThis is a bodybodyThis is a bodyThis is a bodyThis is a bodyThis is a bodyThis is a bodyThis is a body</p>,
-        likes: 50,
-        date: new Date(),
-        comments: [
-            {
-                username: "Jonathan Samson",
-                userImage: "/favicon.ico",
-                body: "Hello, this is a comment and I totally agree with your post!"
-            },
-            {
-                username: "Jonathan Samson",
-                userImage: "/favicon.ico",
-                body: "Hello, this is a comment and I really disagree with your post!"
-            }
-        ],
-        tags: []
-    },{
         id: "101",
         username: "Tee George",
         userImage: "/images/tee_george.PNG",
@@ -110,6 +88,56 @@ var betterPosts = [
             }
         ],
         tags: ['question']
+    }, {
+        id: '107',
+        username: "Jonathan Samson",
+        userImage: "/images/jonathan_samson.jpg",
+        timePassed: "1 hour",
+        title: "Checkout this meal at Long John Silver's!",
+        body: <div>We got treated to lunch during my shift and this really filled the spot.
+            <img style={{margin: '20px', width: '400px'}} src={'/images/long-john.jpg'}/></div>,
+        likes: 35,
+        date: new Date(),
+        comments: [
+            {
+                username: "Jonathan Samson",
+                userImage: "/favicon.ico",
+                body: "Hello, this is a comment and I totally agree with your post!"
+            },
+            {
+                username: "Jonathan Samson",
+                userImage: "/favicon.ico",
+                body: "Hello, this is a comment and I really disagree with your post!"
+            }
+        ],
+        tags: ["shift meal"]
+    },{
+        id: '777',
+        username: "Tee George",
+        userImage: "/images/tee_george.PNG",
+        timePassed: "1 hour",
+        title: "Umm, I was at McDonalds and this happened?",
+        body: <div><p>So my shift at McDonalds started out normal and amazing like always, because snag shifts are so great. But midway through the shift a bunch of reporters started pouring in, and I was very confused.
+            I asked my manager what was happening and he said he didn't know. Next thing I know, Lebron James comes strolling through the door. I guess all the people were paparazzi.
+
+
+            I cannot believe it, I'm still freaking out. I got to meet him and everything, I even got his autograph.</p>
+            <img style={{margin: '20px', width: '400px'}} src={'/images/lebron-mcdonalds.jpg'}/></div>,
+        likes: 50,
+        date: new Date(),
+        comments: [
+            {
+                username: "Jonathan Samson",
+                userImage: "/favicon.ico",
+                body: "Hello, this is a comment and I totally agree with your post!"
+            },
+            {
+                username: "Jonathan Samson",
+                userImage: "/favicon.ico",
+                body: "Hello, this is a comment and I really disagree with your post!"
+            }
+        ],
+        tags: ["snagger story"]
     }
 ];
 

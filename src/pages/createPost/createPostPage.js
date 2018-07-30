@@ -145,7 +145,7 @@ class createPostPage extends Component {
                     <select name="postType" onChange={this.handleInputChange}>
                         <option value="snagger story">snagger story</option>
                         <option value="shift review">shift review</option>
-                        <option value="snag lunch">snag lunch</option>
+                        <option value="snag meal">snag meal</option>
                         <option value="bug report">bug report</option>
                         <option value="other">other</option>
 

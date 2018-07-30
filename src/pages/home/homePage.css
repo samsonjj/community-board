@@ -15,3 +15,13 @@
     margin-top: 160px;
 }
 
+.featured-post {
+    position: fixed;
+    top: 190px;
+    left: 1200px;
+}
+
+.featured-post h1 {
+    margin-top: 0px;
+}
+

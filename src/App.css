@@ -50,3 +50,20 @@
   background: #3c2b68;
   border-radius: 10px;
 }
+
+.space-select {
+  z-index: 3000;
+  position: fixed;
+  top: 100px;
+  left: 475px;
+}
+
+.community-title {
+  position: fixed;
+  color: deeppink;
+  font-size: 75px;
+  z-index: 3000;
+  left: 750px;
+  top: -40px;
+
+}
