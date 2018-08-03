@@ -11,7 +11,7 @@ if(localStorage.getItem('posts') === '' || localStorage.getItem('posts') === und
     localStorage.setItem('posts', JSON.stringify(posts));
 }
 
-var version = 12;
+var version = '12';
 
 if(localStorage.getItem('version') !== version) {
     localStorage.setItem('posts', JSON.stringify(posts));

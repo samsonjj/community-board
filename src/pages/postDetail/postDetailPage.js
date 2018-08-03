@@ -12,10 +12,12 @@ class PostDetailPage extends Component {
     constructor(props) {
         super(props);
         let postId = this.props.match.params.postId;
+        let post = Posts.getPosts().find(function(element) {
+            return element.id === postId});
         this.state = {
             commentBody: '',
-            post: Posts.getPosts().find(function(element) {
-                return element.id === postId})
+            post: post,
+            comments: <Comments post={post}></Comments>
         }
         console.log(Posts.getPosts());
         console.log(postId);
@@ -36,38 +38,49 @@ class PostDetailPage extends Component {
 
     onSubmitComment(event){
         event.preventDefault();
+        console.log('in function');
         let postId = this.props.match.params.postId;
         let post = Posts.getPosts().find(function(element) {
             return element.id === postId});
+        console.log(post);
         let prevComments = post.comments;
+        console.log(prevComments);
         prevComments.push({
             body: this.state.commentBody,
             username: UserProvider.getUser().username,
             userImage: UserProvider.getUser().userImage
         });
         Posts.updatePost(postId, 'comments', prevComments);
-        this.setState({
-            post: Posts.getPosts().find(function (element) {
-                return element.id === postId
-            })
+        console.log(this.state);
+        post.comments.push({
+            body: this.state.commentBody,
+            username: UserProvider.getUser().username,
+            userImage: UserProvider.getUser().userImage
         });
+        this.setState((prevState) => {
+            return {
+                comments: <Comments post={post}></Comments>
+            }
+        });
+        console.log(this.state);
     }
+
+
 
     render() {
         let post = this.state.post;
+        console.log(post);
         return (
             <div className="PostDetailPage">
                 <Navbar></Navbar>
                 <div className={'detail-post-container'}>
-                    {console.log(post)}
                     <Post post={post}></Post>
                 </div>
                 <form className="comment-form" onSubmit={this.onSubmitComment}>
                     <textarea placeholder="Write a comment" className="comment-input-body" type="text" value={this.state.commentBody} name="commentBody" onChange={this.handleInputChange}/>
                     <button className="comment-submit" type={'submit'}>Submit</button>
                 </form>
-
-                <Comments post={post}></Comments>
+                {this.state.comments}
             </div>
         )
     }

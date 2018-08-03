@@ -117,7 +117,7 @@ class Post extends Component {
 
             <div className="post-actions">
                 <span className={"clickable"} onClick={() => this.setRedirect('/post/' + post.id)}>Comments ({post.comments.length})</span>
-                <span className={"clickable"} onClick={() => this.onLike()}>Like</span>
+                <span className={"clickable"} onClick={() => this.onLike()}>Like ({post.likes})</span>
                 <span className={"clickable"} onClick={() => this.setRedirect('/report/' + post.id)}>Report</span>
             </div>
         </div>

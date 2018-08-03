@@ -23,12 +23,17 @@ class LiveFeed extends Component {
         let searchTerm = searchService.search;
         console.log(searchService.search);
 
+        console.log(posts);
+
         this.setState((prevState) => (
             {
                 postsArray: posts.filter(p => !searchTerm || (p.tags && p.tags.includes(searchTerm))).map(
-                    post => (
-                        <Post key={post.id} post={post}></Post>
-                    ))
+                    post => {
+                        console.log('tag search ' + post.tags);
+                        return (
+                            <Post key={post.id} post={post}></Post>
+                        )
+                    })
             }
         ));
     }

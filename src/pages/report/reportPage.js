@@ -5,7 +5,7 @@ import PostsProvider from '../../providers/postsProvider';
 import './reportPage.css';
 import {Redirect} from 'react-router-dom';
 
-export default class extends Component {
+export default class ReportPage extends Component {
 
     constructor(props) {
         super(props);

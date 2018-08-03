@@ -6,6 +6,7 @@ export default class Comments extends Component {
     constructor(props) {
         super(props);
         let comments = props.post.comments;
+        console.log('POST PROP: ' + comments);
         for(let i = 0; i < comments.length; i++) {
             comments[i].minimized = false;
         }

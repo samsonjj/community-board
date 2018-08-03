@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Redirect} from 'react-router-dom';
+import './redirectPage.css';
 
 export default class RedirectPage extends Component {
 
@@ -29,7 +30,7 @@ export default class RedirectPage extends Component {
             redirect = <Redirect to={this.state.redirect}/>
         }
         return (
-            <div>
+            <div className={'RedirectPage'}>
                 {redirect}
                 <br/><br/><br/><br/>
                 <h1 className={'redirect-message'}>{this.state.message}</h1>

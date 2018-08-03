@@ -55,7 +55,7 @@ class createPostPage extends Component {
 
         if (this.state.postType === 'shift review') {
             post.body = <div><p>Review: {this.state.location}<br/>Rating: {this.state.rating}<br/><br/>{this.state.body}</p></div>;
-            post.tags = this.state.tags.concat('shift review');
+            post.tags = this.state.tags.concat(['shift review', this.state.location]);
         }
         else if (this.state.postType === 'bug report') {
 

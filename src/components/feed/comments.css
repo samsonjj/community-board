@@ -25,6 +25,7 @@
 .comment .comment-userImage {
     position: relative;
     width: 50px;
+    border-radius: 50%;
 }
 
 .comment .comment-username {

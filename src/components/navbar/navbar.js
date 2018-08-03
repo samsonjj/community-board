@@ -61,8 +61,8 @@ class Navbar extends Component {
                         <input type="submit" value="go" id="submit" onClick={this.onSearch}/>
                     </form>
                     <li className="clickable" onClick={()=>this.setSearch('shift review')}>Shift reviews</li>
-                    <li className="clickable">Shift lunches</li>
-                    <li className="clickable">Snagger stories</li>
+                    <li className="clickable" onClick={()=>this.setSearch('shift meal')}>Shift meals</li>
+                    <li className="clickable" onClick={()=>this.setSearch('snagger story')}>Snagger stories</li>
                     <li className="clickable">Message a snagger</li>
                     <br/>
                     <a href="create"><li className="clickable" onClick={()=>this.setRedirect('/create')}>Create a post</li></a>

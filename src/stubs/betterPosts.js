@@ -23,7 +23,7 @@ var betterPosts = [
                 body: "Hello, this is a comment and I really disagree with your post!"
             }
         ],
-        tags: ["shift review"]
+        tags: ["shift review", 'McDonalds - Glen Allen']
     },{
         id: "102",
         username: "Sabrina Rusli",
@@ -36,16 +36,11 @@ var betterPosts = [
         comments: [
             {
                 username: "Jonathan Samson",
-                userImage: "/jonathan_samson.PNG",
+                userImage: "/images/jonathan_samson.jpg",
                 body: "I got paid, I'd wait for a little bit, otherwise you could send in a support ticket to snag!"
-            },
-            {
-                username: "Jonathan Samson",
-                userImage: "/favicon.ico",
-                body: "Hello, this is a comment and I really disagree with your post!"
             }
         ],
-        tags: ['shift issue']
+        tags: ['shift issue', 'Chuck E Cheese']
     },{
         id: "103",
         username: "Jonathan Samson",
@@ -58,12 +53,12 @@ var betterPosts = [
         date: new Date(),
         comments: [
             {
-                username: "Jonathan Samson",
-                userImage: "/favicon.ico",
-                body: "Shift is available now for other workers. Thank you Kelsey for letting the workers know and dropping it so other workers would have time to pick it up since you were not able to be there this afternoon."
+                username: "Allie Curtin",
+                userImage: "/images/alberta.PNG",
+                body: "Shift is available now for other workers. Thank you Jonathan for letting the workers know and dropping it so other workers would have time to pick it up since you were not able to be there this afternoon."
             },
         ],
-        tags: ['available shift']
+        tags: ['available shift', 'Potbelly Sandwhich Shop']
     },{
         id: "104",
         username: "Allie Curtin",
@@ -110,13 +105,13 @@ var betterPosts = [
                 body: "Hello, this is a comment and I really disagree with your post!"
             }
         ],
-        tags: ["shift meal"]
+        tags: ["shift meal", 'Long John Silvers']
     },{
         id: '777',
         username: "Tee George",
         userImage: "/images/tee_george.PNG",
         timePassed: "1 hour",
-        title: "Umm, I was at McDonalds and this happened?",
+        title: "I was at McDonalds and this happened",
         body: <div><p>So my shift at McDonalds started out normal and amazing like always, because snag shifts are so great. But midway through the shift a bunch of reporters started pouring in, and I was very confused.
             I asked my manager what was happening and he said he didn't know. Next thing I know, Lebron James comes strolling through the door. I guess all the people were paparazzi.
 
@@ -137,7 +132,19 @@ var betterPosts = [
                 body: "Hello, this is a comment and I really disagree with your post!"
             }
         ],
-        tags: ["snagger story"]
+        tags: ["snagger story", 'McDonalds - Glen Allen']
+    },{
+        id: "110",
+        username: "Jonathan Samson",
+        userImage: "/images/jonathan_samson.jpg",
+        timePassed: "4 hours",
+        title: "Arby's is poopoo",
+        body: <p>I don't like them.</p>,
+        likes: 0,
+
+        date: new Date(),
+        comments: [],
+        tags: []
     }
 ];
 

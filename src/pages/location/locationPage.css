@@ -1,0 +1,19 @@
+.locationPage {
+}
+
+.location-info {
+    position: absolute;
+    top: 190px;
+    left: 400px;
+    width: 700px;
+}
+
+.location-image {
+    width: 700px;
+}
+
+.locationPage .LiveFeed {
+    position: absolute;
+    top: 30px;
+    left: 780px;
+}
